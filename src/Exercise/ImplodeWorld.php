@@ -33,8 +33,15 @@ class ImplodeWorld extends AbstractExercise implements ExerciseInterface, CliExe
      */
     public function getArgs()
     {
+        $args_len = rand(3, 20);
         $words = ["concatenate", "lion", "dancer", "hello", "number", "book"];
-        return [$words[array_rand($words)], $words[array_rand($words)]];
+        $args = [];
+
+        for ($i = 0; $i < $args_len; $i++) {
+            $args[] = $words[array_rand($words)];
+        }
+
+        return $args;
     }
 
     /**

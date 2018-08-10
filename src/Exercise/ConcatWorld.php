@@ -31,15 +31,8 @@ class ConcatWorld extends AbstractExercise implements ExerciseInterface, CliExer
      */
     public function getArgs()
     {
-        $args_len = rand(3, 20);
         $words = ["concatenate", "lion", "dancer", "hello", "number", "book"];
-        $args = [];
-
-        for ($i = 0; $i < $args_len; $i++) {
-            $args[] = $words[array_rand($words)];
-        }
-
-        return $args;
+        return [$words[array_rand($words)], $words[array_rand($words)]];
     }
 
     /**
