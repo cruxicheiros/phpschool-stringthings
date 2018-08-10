@@ -7,6 +7,8 @@ use PhpSchool\StringThings\Exercise\ImplodeWorld;
 use PhpSchool\StringThings\Exercise\ReverseWorld;
 use PhpSchool\StringThings\Exercise\CountWords;
 use PhpSchool\StringThings\Exercise\AsciiShift;
+use PhpSchool\StringThings\Exercise\TheKey;
+
 
 
 
@@ -16,4 +18,6 @@ return [
     ReverseWorld::class => object(ReverseWorld::class),
     CountWords::class => object(CountWords::class),
     AsciiShift::class => object(AsciiShift::class),
+    TheKey::class => object(TheKey::class),
+
 ];

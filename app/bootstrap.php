@@ -24,6 +24,8 @@ use PhpSchool\StringThings\Exercise\ImplodeWorld;
 use PhpSchool\StringThings\Exercise\ReverseWorld;
 use PhpSchool\StringThings\Exercise\CountWords;
 use PhpSchool\StringThings\Exercise\AsciiShift;
+use PhpSchool\StringThings\Exercise\TheKey;
+
 
 
 
@@ -35,6 +37,8 @@ $app->addExercise(ImplodeWorld::class);
 $app->addExercise(ReverseWorld::class);
 $app->addExercise(CountWords::class);
 $app->addExercise(AsciiShift::class);
+$app->addExercise(TheKey::class);
+
 
 
 
