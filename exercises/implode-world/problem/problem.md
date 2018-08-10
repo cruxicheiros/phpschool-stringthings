@@ -3,7 +3,7 @@ Write a program that accepts any number of arguments, then concatenates all of t
 -----------------
 ## HINTS
 
-You're encouraged to use the builtin function `implode`.  
+In this exercise, you will need to use the builtin function `implode`.  
 You can read more about the `implode` function here: http://php.net/manual/en/function.implode.php
 
 To test your program, you can run it with `php program.php` and any number of as arguments, e.x.
