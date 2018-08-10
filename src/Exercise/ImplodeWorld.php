@@ -24,7 +24,7 @@ class ImplodeWorld extends AbstractExercise implements ExerciseInterface, CliExe
      */
     public function getDescription()
     {
-        return 'Concatenate any number of strings';
+        return 'Use the implode function to join strings';
     }
 
 
