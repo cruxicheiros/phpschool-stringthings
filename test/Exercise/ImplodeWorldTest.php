@@ -17,6 +17,10 @@ class ImplodeWorldTest extends TestCase
         $this->assertGreaterThanOrEqual(3, count($e->getArgs()));
         $this->assertLessThanOrEqual(20, count($e->getArgs()));
 
+        foreach ($e->getArgs() as $arg) {
+            $this->assertInternalType("string", $arg);
+        }
+
         $this->assertInstanceOf(SolutionInterface::class, $e->getSolution());
         $this->assertFileExists(realpath($e->getProblem()));
         $this->assertNull($e->tearDown());

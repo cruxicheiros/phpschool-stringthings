@@ -20,7 +20,7 @@ class TheKeyTest extends TestCase
         $this->assertInternalType("string", $e->getArgs()[0]);
         $this->assertInternalType("string", $e->getArgs()[1]);
 
-        $this->assertGreaterThan(count($e->getArgs()[0]), count($e->getArgs()[1]));
+        $this->assertLessThan(strlen($e->getArgs()[0]), strlen($e->getArgs()[1]));
 
         $ord_values = range(32, 126);
         $chars = array_map("chr", $ord_values);

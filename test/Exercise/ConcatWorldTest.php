@@ -15,6 +15,8 @@ class ConcatWorldTest extends TestCase
         $this->assertEquals(ExerciseType::CLI, $e->getType());
 
         $this->assertSame(2, count($e->getArgs()));
+        $this->assertInternalType("string", $e->getArgs()[0]);
+        $this->assertInternalType("string", $e->getArgs()[1]);
 
         $this->assertInstanceOf(SolutionInterface::class, $e->getSolution());
         $this->assertFileExists(realpath($e->getProblem()));
